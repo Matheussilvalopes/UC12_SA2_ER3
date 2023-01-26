@@ -1,0 +1,15 @@
+C:\Users\mathe\OneDrive\Área de Trabalho\Encontro Remoto 2\bin\Debug\net6.0\Encontro Remoto 2.exe
+C:\Users\mathe\OneDrive\Área de Trabalho\Encontro Remoto 2\bin\Debug\net6.0\Encontro Remoto 2.deps.json
+C:\Users\mathe\OneDrive\Área de Trabalho\Encontro Remoto 2\bin\Debug\net6.0\Encontro Remoto 2.runtimeconfig.json
+C:\Users\mathe\OneDrive\Área de Trabalho\Encontro Remoto 2\bin\Debug\net6.0\Encontro Remoto 2.dll
+C:\Users\mathe\OneDrive\Área de Trabalho\Encontro Remoto 2\bin\Debug\net6.0\Encontro Remoto 2.pdb
+C:\Users\mathe\OneDrive\Área de Trabalho\Encontro Remoto 2\obj\Debug\net6.0\Encontro Remoto 2.csproj.AssemblyReference.cache
+C:\Users\mathe\OneDrive\Área de Trabalho\Encontro Remoto 2\obj\Debug\net6.0\Encontro Remoto 2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mathe\OneDrive\Área de Trabalho\Encontro Remoto 2\obj\Debug\net6.0\Encontro Remoto 2.AssemblyInfoInputs.cache
+C:\Users\mathe\OneDrive\Área de Trabalho\Encontro Remoto 2\obj\Debug\net6.0\Encontro Remoto 2.AssemblyInfo.cs
+C:\Users\mathe\OneDrive\Área de Trabalho\Encontro Remoto 2\obj\Debug\net6.0\Encontro Remoto 2.csproj.CoreCompileInputs.cache
+C:\Users\mathe\OneDrive\Área de Trabalho\Encontro Remoto 2\obj\Debug\net6.0\Encontro Remoto 2.dll
+C:\Users\mathe\OneDrive\Área de Trabalho\Encontro Remoto 2\obj\Debug\net6.0\refint\Encontro Remoto 2.dll
+C:\Users\mathe\OneDrive\Área de Trabalho\Encontro Remoto 2\obj\Debug\net6.0\Encontro Remoto 2.pdb
+C:\Users\mathe\OneDrive\Área de Trabalho\Encontro Remoto 2\obj\Debug\net6.0\Encontro Remoto 2.genruntimeconfig.cache
+C:\Users\mathe\OneDrive\Área de Trabalho\Encontro Remoto 2\obj\Debug\net6.0\ref\Encontro Remoto 2.dll
