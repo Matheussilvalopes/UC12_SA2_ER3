@@ -12,11 +12,20 @@ namespace Encontro_Remoto_2
     {
         public string? cpf { get; set; }
         public DateTime dataNascimento { get; set; }
-        public override void PagarImposto(float salario){} 
-        //override é o atributo de classe que faz com que, quando utilizado, sobrescreva outro atributo com mesmo nome,
+        public float salario{get; set;}
+        public override float PagarImposto(float salario){
+            if(salario<=1500){
+                return 0;
+            }else if(salario>1500 && salario<=5000){
+                return (salario/100)*3;
+            }else{
+                return (salario/100)*5;
+            }
+        } 
+        // Override é o atributo de classe que faz com que, quando utilizado, sobrescreva outro atributo com mesmo nome,
         //nesse caso, um método geralmente abstrata, como o método PagarImposto na classe Pessoa é abstrato, ele não pode ser instanciado
         //não pode ter um corpo, sendo assim, é necessário utilizar o override dentro da classe PF e PJ com o método PagarImposto para
-        //qeu possamos criar um corpo e uma forma para ele. 
+        //que possamos criar um corpo e uma forma para ele. 
         public bool ValidarDataNascimento(DateTime dataNasc){
             DateTime dataAtual = DateTime.Today;
             double anos = ((dataAtual - dataNasc).TotalDays)/365;
