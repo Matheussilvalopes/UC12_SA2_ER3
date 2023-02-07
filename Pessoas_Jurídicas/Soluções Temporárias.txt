@@ -1,0 +1,8 @@
+
+Nome: Rui Silva,
+CPF: 12345678000143,
+Razão Social: Soluções Temporárias,
+Logradouro: Rua Presidente Vargas,
+Número: 500,
+Complemento: Próximo a Central do Brasil,
+Renda: 2340056

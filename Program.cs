@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using System.IO;
 
 namespace Encontro_Remoto_2
 {
@@ -50,6 +51,7 @@ namespace Encontro_Remoto_2
                         Console.WriteLine($"Digite o o seu CPF.");
                         pf.cpf=Console.ReadLine();
                         
+                        
                         Console.WriteLine($"Digite o seu nome.");
                         pf.nome=Console.ReadLine();
 
@@ -85,6 +87,22 @@ namespace Encontro_Remoto_2
                             System.Console.WriteLine($"Cadastro Aprovado");
                             ListaPF.Add(pf);
                             Console.WriteLine($"O desconto do Imposto é: {pf.PagarImposto(pf.salario)} reais");
+                            
+                           
+    
+                                var caminhoDoArquivo = $"C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Encontro Remoto 2\\Pessoas_Físicas\\{pf.nome}.txt";
+                                var stream =  new StreamWriter(caminhoDoArquivo);
+                                stream.Write(@$"
+Nome: {pf.nome},
+CPF: {pf.cpf},
+Data de Nascimento: {pf.dataNascimento},
+Logradouro: {pf.endereco.logradouro},
+Número: {pf.endereco.numero},
+Complemento: {pf.endereco.complemento},
+Renda: {pf.salario}");
+                                stream.Close();
+                                
+                            
                         }else{
                         System.Console.WriteLine($"Cadastro Reprovado");
                         }
@@ -151,6 +169,20 @@ namespace Encontro_Remoto_2
                             Console.WriteLine($"CNPJ cadastrado com sucesso!");
                             ListaPJ.Add(novapj);
                             Console.WriteLine($"O desconto do Imposto é: {pj.PagarImposto(novapj.salario)} reais");
+
+                            var caminhoDoArquivo = $"C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Encontro Remoto 2\\Pessoas_Jurídicas\\{novapj.razaoSocial}.txt";
+                            var stream =  new StreamWriter(caminhoDoArquivo);
+                            stream.Write(@$"
+Nome: {novapj.nome},
+CPF: {novapj.cnpj},
+Razão Social: {novapj.razaoSocial},
+Logradouro: {novapj.endereco.logradouro},
+Número: {novapj.endereco.numero},
+Complemento: {novapj.endereco.complemento},
+Renda: {novapj.salario}");
+                            stream.Close();
+
+
                         }else{
                             Console.WriteLine($"CNPJ não cadastrado, digite um CNPJ válido.");
                             // Console.WriteLine($"{novapj.cnpj.Substring(8,4)}"); Verificação das premissas utilizadsas em ValidarCnpj
@@ -204,11 +236,13 @@ namespace Encontro_Remoto_2
     static bool enderecoComercial(Endereco end){
         Console.WriteLine($"Este endereço é comercial? S/N");
         string resposta= Console.ReadLine().ToUpper();
+        
         if(resposta=="S"){
             return end.enderecoComercial=true;
         }else{
             return end.enderecoComercial=false;
         }
+        
     }
 
     }
